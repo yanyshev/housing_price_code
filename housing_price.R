@@ -97,5 +97,5 @@ unobserved$date <- as.yearqtr(unobserved$date, format = "%YQ%q")
 library(ggplot2)
 ggplot(estimated, aes(x=date, y=price)) + geom_line(group = 1) + geom_line(data=unobserved, aes(x=date, y=price_trend), linewidth = 1, group = 1)
 
-write.csv(unobserved, '/Users/yanyshev_dima/Desktop/unobserved.csv')
-write.csv(estimated, '/Users/yanyshev_dima/Desktop/estimated.csv')
+write.csv(unobserved, '~/unobserved.csv')
+write.csv(estimated, '~/estimated.csv')
